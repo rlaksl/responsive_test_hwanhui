@@ -1,0 +1,21 @@
+* {box-sizing:border-box; margin:0; padding:0; font-size:1.0em; color:#000; text-decoration:none;}
+header {display:flex; justify-content: space-between; padding:0 15px; align-items: center; height:60px; position:relative;}
+header a {text-transform: uppercase; font-weight:600; margin:0 5px;}
+header h1 a img {} /* h1 추가 */
+header h1 {width:150px; position:absolute; left:50%; transform:translateX(-50%);}
+main .visual {
+    background:url(../images/visual.gif) center 6%;
+    height:350px; width:100%;
+}
+main h2 {text-align:center; padding:30px 0; text-transform: capitalize;}
+main .link {max-width:1400px; margin:0 auto; display:flex;}
+main .link a img {width: 100%;} 
+
+@media screen and (max-width:1400px)/* 1400px 뒤에 세미콜론 지움 */{
+    header .left,
+    header .right {display:none;}
+    header h1 a img {width: 100%;}
+    main .link {padding:0 15px;}
+    main .link img {width: 100%;}
+    main .visual {background-size: cover;}
+}/* } 닫음... */
